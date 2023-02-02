@@ -1,0 +1,136 @@
+EESchema Schematic File Version 4
+LIBS:imxrt1020-board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "IMX-RT 1021 in LQFP144 board"
+Date "2018-07-07"
+Rev "0.1"
+Comp "CIAA Project"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1850 1950 1100 750 
+U 5B320D15
+F0 "POWER" 60
+F1 "POWER.sch" 60
+F2 "PWR_IN1" I R 2950 2100 60 
+$EndSheet
+$Sheet
+S 6200 1850 1050 1500
+U 5B320D18
+F0 "MEMORY" 60
+F1 "MEMORY.sch" 60
+F2 "ENET_MDIO" B L 6200 2450 60 
+F3 "ENET_MDC" O L 6200 2350 60 
+F4 "CAN_TX" O L 6200 2600 60 
+F5 "CAN_RX" I L 6200 2700 60 
+F6 "GPIO3_24" B L 6200 2850 60 
+F7 "GPIO3_25" B L 6200 2950 60 
+F8 "UART8_RX" I L 6200 3100 60 
+F9 "UART8_TX" O L 6200 3200 60 
+$EndSheet
+Wire Wire Line
+	3850 2100 2950 2100
+$Sheet
+S 3850 1800 1600 1550
+U 5B320D1B
+F0 "GPIO" 60
+F1 "GPIO.sch" 60
+F2 "USB_VBUS" O L 3850 2100 60 
+F3 "ENET_MDIO" B R 5450 2450 60 
+F4 "ENET_MDC" I R 5450 2350 60 
+F5 "RS485_TX" I R 5450 3200 60 
+F6 "RS485_RX" O R 5450 3100 60 
+F7 "RS485_DE" I R 5450 2950 60 
+F8 "CAN_TXD" I R 5450 2600 60 
+F9 "CAN_RXD" O R 5450 2700 60 
+F10 "DBG_UART_TX" O L 3850 2900 60 
+F11 "DBG_UART_RX" I L 3850 3000 60 
+$EndSheet
+Wire Wire Line
+	5450 2350 6200 2350
+Wire Wire Line
+	6200 2450 5450 2450
+Wire Wire Line
+	5450 3100 6200 3100
+Wire Wire Line
+	6200 3200 5450 3200
+Wire Wire Line
+	6200 2950 5450 2950
+Wire Wire Line
+	5450 2700 6200 2700
+Wire Wire Line
+	6200 2600 5450 2600
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5B90C50D
+P 2100 3700
+F 0 "LOGO1" H 2100 3975 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 2100 3475 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen" H 2100 3700 50  0001 C CNN
+F 3 "~" H 2100 3700 50  0001 C CNN
+	1    2100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 5B90CCBA
+P 2100 4250
+F 0 "LOGO2" H 2100 4525 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 2100 4025 50  0001 C CNN
+F 2 "Symbol:KiCad-Logo2_6mm_SilkScreen" H 2100 4250 50  0001 C CNN
+F 3 "~" H 2100 4250 50  0001 C CNN
+	1    2100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO3
+U 1 1 5B90D198
+P 2100 4800
+F 0 "LOGO3" H 2100 5075 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 2100 4575 50  0001 C CNN
+F 2 "local:ciaa_7-logo" H 2100 4800 50  0001 C CNN
+F 3 "~" H 2100 4800 50  0001 C CNN
+	1    2100 4800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4050 3800 1100 1000
+U 5BAD1951
+F0 "Debug UART" 60
+F1 "dbg_uart.sch" 60
+F2 "RX" I L 4050 4200 60 
+F3 "TX" O L 4050 4300 60 
+$EndSheet
+Wire Wire Line
+	4050 4300 3600 4300
+Wire Wire Line
+	3600 4300 3600 3000
+Wire Wire Line
+	3600 3000 3850 3000
+Wire Wire Line
+	3850 2900 3500 2900
+Wire Wire Line
+	3500 2900 3500 4200
+Wire Wire Line
+	3500 4200 4050 4200
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 5B96E653
+P 5850 2850
+F 0 "J5" H 5700 2850 50  0000 C CNN
+F 1 "IO3_24" H 5956 2937 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D0.7mm_L6.5mm_W1.8mm_FlatFork" H 5850 2850 50  0001 C CNN
+F 3 "~" H 5850 2850 50  0001 C CNN
+	1    5850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2850 6200 2850
+$EndSCHEMATC
